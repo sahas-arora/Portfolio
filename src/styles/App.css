@@ -1,0 +1,11 @@
+body{
+    background: rgb(63, 63, 52);
+    margin: unset;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
