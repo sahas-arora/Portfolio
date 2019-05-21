@@ -25,6 +25,7 @@
     flex-direction: column;
     /* border: 1px solid red; */
     height: 100%;
+    z-index: 0;
     
 }
 
