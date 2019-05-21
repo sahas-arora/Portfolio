@@ -40,18 +40,15 @@ export default class SocialMedia extends Component {
         // let customStyle = {{ "border": "1px solid red"}};
         
         return (
-            <div className="icon-container">
-            {icons.map(iconName => {
-                return (
-                   <i className={`${iconName} grey big  icon`} />
-                  );})}
+            <div className="icon-container wow rollIn">
+            {icons.map(iconName =>  <i className={`${iconName} grey big  icon`} />)}
             </div>
         );
     }
 
     render() {
         return(
-            <div className="social-media-container">
+            <div className="social-media-container ">            
                 <div className="social-media">
 
                     <div className="social-media-left">
@@ -59,7 +56,9 @@ export default class SocialMedia extends Component {
                     </div>
 
 
-                    <div className="social-media-right">
+                    <div className="social-media-right wow rollIn"
+                        data-wow-duration="0.9s"
+                    >
                         <div className="text">
                          sahasarora@gmail.com
                         </div>

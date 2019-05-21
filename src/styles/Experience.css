@@ -1,0 +1,111 @@
+.experience-container {
+    padding: 10px;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 300px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experience-part-1 {
+    flex: 2 2 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.box-heading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(250, 250, 250);
+    padding: 10px;
+    margin: 10px;
+}
+
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(139, 138, 138);
+
+  /* width: 100%; */
+}
+
+.company-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(139, 138, 138);
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.company-name:hover{
+    cursor: pointer;
+    color: rgb(255,195,65);
+}
+
+.selected-tab {
+     color: rgb(255,195,65);
+
+}
+
+.experience-part-2{
+    flex: 8 8 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exp-content {
+    /* border: 1px solid white; */
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.experience-title {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(250, 250, 250);
+    padding: 10px;
+}
+
+.experience-time-frame, .experience-location{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(200, 200, 200);
+    padding: 10px;
+}
+
+.descrip-text {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(139, 138, 138);
+}
+
+
+/* .experience-location {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(139, 138, 138);
+    padding: 10px;
+} */
+
+
+
+/* 
+.experience-title {
+
+} */
+

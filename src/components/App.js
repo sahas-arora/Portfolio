@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Profile from "./Profile";
 import SocialMedia from "./SocialMedia";
 import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+import Dummy from "./Dummy";
 
 import "../styles/App.css";
 
@@ -14,8 +16,11 @@ export default class App extends Component {
         <div className="contents">
           <Navbar />
           <Profile />
-          <SocialMedia />
           <AboutMe />
+          <Experience />
+
+          <Dummy />
+          <SocialMedia />
         </div>
       </div>
     );

@@ -66,7 +66,19 @@
     color:  rgb(139, 138, 134);
     letter-spacing: 3px;
 
- 
 
 }
+
+.text:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
 
