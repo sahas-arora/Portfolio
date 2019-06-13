@@ -28,9 +28,13 @@ export default class Experience extends Component {
     }
 
     componentDidUpdate() {
-        console.log("Updated!!");
-    }
+        console.log(document.getElementsByClassName("experience-part-2")[0]);
 
+        document.getElementsByClassName("experience-part-2")[0].classList.add("updated-class");
+
+
+    }
+    
     renderHeadings() {
         let headings = Object.keys(experience);
 
@@ -54,26 +58,27 @@ export default class Experience extends Component {
 
     renderContent() {
        let propObject = experience[this.state.selectedExperience];
-        console.log("reached");
         return(
             <div className="exp-content">
-                <div className="experience-title">
-                    {`${propObject.title} at ${this.state.selectedExperience}`}                
+                <div className="exp-container">
+                    <div className="experience-title">
+                        {`${propObject.title} at ${this.state.selectedExperience}`}                
+                    </div>
+
+                    <div className="experience-time-frame">
+                        {propObject.timeFrame}
+                    </div>
+
+                    <div className="experience-location">
+                        {`${propObject.location},${propObject.state},${propObject.country}`}
+                    </div>
                 </div>
 
-                <div className="experience-time-frame">
-                    {propObject.timeFrame}
-                </div>
-
-                <div className="experience-location">
-                    {`${propObject.location},${propObject.state},${propObject.country}`}
-                </div>
-
-                    <ul>
-                        <li className="descrip-text" >{propObject.description.line1}</li>
-                        <li className="descrip-text">{propObject.description.line2}</li>
-                    </ul>       
-
+                <ul>
+                    <li className="descrip-text" >{propObject.description.line1}</li>
+                    <li className="descrip-text">{propObject.description.line2}</li>
+                </ul>  
+                    
             </div>
         );
     }
@@ -87,6 +92,7 @@ export default class Experience extends Component {
         return(
             <div className="experience-container wow fadeInRightBig"
                 data-wow-duration="1.5s"
+                id="Experience"
             >
                 <div className="experience">
                     <div className="box-heading" onClick={() => this.clicked()}>
@@ -97,10 +103,12 @@ export default class Experience extends Component {
                             {this.renderHeadings()}
                         </div>
                     </div>
-                    <div className="experience-part-2">
+                    <div className="experience-part-2"
+                    >
                         {this.renderContent()}
                     </div>
                 </div>
+               
             </div>
         )
     }

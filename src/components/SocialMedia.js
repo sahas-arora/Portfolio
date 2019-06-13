@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import socialMedia from "../helpers/socialMediaLinks";
 import "../styles/SocialMedia.css";
 
 
@@ -10,40 +11,22 @@ export default class SocialMedia extends Component {
         super(props);
 
         this.renderIcons = this.renderIcons.bind(this);
-        this.handleScroll = this.handleScroll.bind(this);
     }
-
-
-    componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
-    }
-
-    handleScroll() {
-        // let contentBar = document.getElementsByClassName("icon-container")[0];
-        // let offSet = contentBar.offset();
-
-
-        // if (window.scrollTop() > offSet.top) {
-        //     contentBar.stop().animate( {
-        //         marginTop: window.scrollTop() - offSet.top + 15
-        //     });
-        // } else {
-        //     contentBar.stop().animate({
-        //         marginTop: 0
-        //     });
-        // }
-    }
-
 
     renderIcons() {
+        let keys = Object.keys(socialMedia);
 
-        // let customStyle = {{ "border": "1px solid red"}};
-        
-        return (
-            <div className="icon-container wow rollIn">
-            {icons.map(iconName =>  <i className={`${iconName} grey big  icon`} />)}
+        return keys.map(key => {
+            return(
+            <div className="icon-container wow rollIn" key={key} >
+            <a href={socialMedia[key].link}>
+                <i className={`${key} grey big icon myHover`} />
+            </a>
             </div>
-        );
+            );
+        })
+
+     
     }
 
     render() {
@@ -56,11 +39,13 @@ export default class SocialMedia extends Component {
                     </div>
 
 
-                    <div className="social-media-right wow rollIn"
+                    <div className="social-media-right wow fadeInRightBig"
                         data-wow-duration="0.9s"
                     >
                         <div className="text">
+                        <a href="mailto: sahasarora@gmail.com">
                          sahasarora@gmail.com
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -69,4 +54,3 @@ export default class SocialMedia extends Component {
     }
 }
 
-let icons = ["github","linkedin","facebook", "instagram"];

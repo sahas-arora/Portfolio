@@ -4,13 +4,28 @@ import "../styles/AboutMe.css";
 
 export default class AboutMe extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.renderLists = this.renderLists.bind(this);
+    }
+
+    renderLists(array) {
+        return array.map(element => {
+            return <li>{element}</li>
+        })
+    }
+
 
     render() {
+        let list1 = ["ReactJS", "NodeJS", "Express", "MongoDB"];
+        let list2 = ["GraphQL", "Docker", "HTML", "CSS"];
+
+        
         return(
             <div className="about-me-container wow fadeInLeftBig "
-            data-wow-duration="1.5s" 
-            // data-wow-delay="1s"
-            
+            data-wow-duration="1.5s"  
+            id="About"           
             >
                 <div className="about-me">
                     <div className="about-me-left">
@@ -38,37 +53,25 @@ export default class AboutMe extends Component {
                             <div className="list-container">
                                 <div className="list-1">
                                     <ul>
-                                        <li>React</li>
-                                        <li>Node.js</li>
-                                        <li>Express.js</li>
-                                        <li>MongoDB</li>
+                                        {this.renderLists(list1)}
                                     </ul>
                                 </div>
                                 <div className="list-2">
                                     <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>Docker</li>
-                                        <li>Socket.io</li>
+                                      {this.renderLists(list2)}
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    
-                    
-                    
+                        </div>                    
                     </div>
 
-                    <div className="about-me-right">
-                        
+                    <div className="about-me-right">                    
                         <div className="image-container">
                             <img 
                                 className="my-image" 
                                 src={require("../assets/images/SahasA.png")}
                                 alt="Me" />
                         </div>
-                    
-                    
                     </div>
 
                 </div>

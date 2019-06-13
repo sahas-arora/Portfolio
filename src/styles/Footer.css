@@ -1,0 +1,29 @@
+.footer-container {
+    width: 100%;
+    margin-top: 200px;
+    background: rgb(36, 36, 35);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid rgb(36,36,35);
+}
+
+.footer-line1 {
+    padding: 10px;
+    font-size: 18px;
+    color:  rgb(255,195,65);
+}
+
+.footer-line2 {
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(220,220,220);
+}
+
+.footer-icon-container {
+    padding: 10px;
+}

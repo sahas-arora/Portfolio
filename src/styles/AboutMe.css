@@ -3,10 +3,11 @@
     /* margin: 50px; */
     padding: 10px;
     /* max-width: 80%; */
-    align-self: center;
+    /* align-self: center; */
     width: 80%;
     margin: 0 auto;
     margin-top: 300px;
+    /* border: 1px solid red; */
 
 }
 
@@ -23,8 +24,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
-    /* margin: 20px; */
+    /* margin: 10px; */
+    margin-left: 100px;
 }
 
 .about-me-heading {
@@ -41,6 +42,8 @@
     font-size: 20px;
     padding: 10px;
     color: rgb(139, 138, 138);
+    line-height: 1;
+    letter-spacing: 0.5px;
 }
 
 .about-me-content-2 {
@@ -48,6 +51,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     padding: 10px;
+    line-height: 1;
+    letter-spacing: 0.5px;
 }
 
 .about-me-content-3 {
@@ -91,19 +96,19 @@
 
 
 .image-container {
-    height: 80%;
-    align-self: flex-end;
+    height: 60%;
+    align-self: center;
     /* border: 1px solid black; */
     /* align-content: center; */
     margin: 20px;
-    width: 70%;
+    width: 50%;
 }
 
 .my-image {
     height: 100%;
     width: 100%;
     /* border: 1px solid rgb(200,200,200); */
-    border-radius: 30%;
+    border-radius: 50%;
     /* padding: 10px; */
 }
 
@@ -112,6 +117,8 @@ ul li {
     /* set color of list item text */
   
     list-style: none; 
+    line-height: 1;
+    letter-spacing: 1px;
   }
 
 ul li::before {

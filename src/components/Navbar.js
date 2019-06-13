@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "../styles/Navbar.css";
 
-let Link = ["About","Experience","Projects","Contact"];
+let nav_links = ["About","Experience","Projects","Contact"];
 
 export default class Navbar extends Component {
 
@@ -10,33 +10,51 @@ export default class Navbar extends Component {
         super(props);
 
         this.renderLinks = this.renderLinks.bind(this);
+        this.onScroll = this.onScroll.bind(this);
     }
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.onScroll);
+      }
+    
+      onScroll() {
+        if (window.pageYOffset > 5) {
+          document
+            .getElementsByClassName("navbar-container")[0]
+            .classList.add("nav-add");
+        } else {
+          document
+            .getElementsByClassName("navbar-container")[0]
+            .classList.remove("nav-add");
+        }
+
+        // var prevScrollpos = window.pageYOffset;
+        // var currentScrollPos = window.pageYOffset;
+        // if (prevScrollpos > currentScrollPos) {
+        //     document.getElementsByClassName("navbar-container").classList.add("nav-show");
+        // } else {
+        //     document.getElementsByClassName("navbar-container").classList.add("nav-dont");
+        // }
+        // prevScrollpos = currentScrollPos;
+        
+      }
+
+ 
 
     renderLinks() {
         return(
-            <div className="navbar-right">
-            {Link.map((link) => {
+            <div id="navbar-right" className="navbar-right">
+            {nav_links.map((link) => {
                 return(
                     <div className="nav-link" key={link}>
+                        <a href={`/#${link}`}> 
                         {link}
+                        </a>
                     </div>
                 );
             })}
             </div>
-        )
-
-
-
-    //    return Link.map(link => {
-    //         console.log(link);
-    //        return( 
-    //        <div className="navbar-right" key={link}>
-    //         <div className="nav-link">
-    //             {link}
-    //         </div>
-    //         </div>
-    //        );
-    //     });
+        );
     }
 
 
@@ -49,7 +67,6 @@ export default class Navbar extends Component {
                             SA
                         </div>
                     </div>
-
                     {this.renderLinks()}
 
                 </div>

@@ -1,15 +1,17 @@
 .experience-container {
     padding: 10px;
-    width: 80%;
-    margin: 0px auto;
+    width: 70%;
+    margin: 0 auto;
     margin-top: 300px;
     z-index: 1;
+    align-self: center;
 }
 
 .experience {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 .experience-part-1 {
@@ -30,9 +32,10 @@
 }
 
 .company {
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   width: 100%;
   cursor: pointer;
@@ -51,7 +54,8 @@
 
 .company-name:hover{
     cursor: pointer;
-    color: rgb(255,195,65);
+    color: rgb(265,205,75);
+    opacity: 0.7;
 }
 
 .selected-tab {
@@ -64,6 +68,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* text-align: center */
 }
 
 .exp-content {
@@ -73,6 +78,13 @@
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
+}
+
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .experience-title {
@@ -93,6 +105,7 @@
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(139, 138, 138);
+    line-height: 2;
 }
 
 

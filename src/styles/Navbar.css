@@ -8,7 +8,15 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  
+  /* border-bottom: 1px solid rgba(200, 200, 200); */
+    z-index: 999;
+    transition: all 0.3s;
     /* border-bottom: 1px solid rgb(230, 224, 224); */
+}
+
+.nav-add {
+    top:0;
 }
 
 .navbar-left {
@@ -31,12 +39,15 @@
     justify-content: space-around;
 }
 
-.nav-link {
-    font-size: 15px;
-    margin-top: 10px;
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
+  
+  .nav-link {
+      position: relative;
+      font-size: 15px;
+      /* margin-top: 10px; */
+      padding: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    }
 
-
+  

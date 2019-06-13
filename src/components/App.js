@@ -5,7 +5,9 @@ import Profile from "./Profile";
 import SocialMedia from "./SocialMedia";
 import AboutMe from "./AboutMe";
 import Experience from "./Experience";
-import Dummy from "./Dummy";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 import "../styles/App.css";
 
@@ -18,8 +20,9 @@ export default class App extends Component {
           <Profile />
           <AboutMe />
           <Experience />
-
-          <Dummy />
+          <Projects />
+          <Contact />
+          <Footer />
           <SocialMedia />
         </div>
       </div>

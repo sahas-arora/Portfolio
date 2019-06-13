@@ -7,8 +7,8 @@ const experience = {
         "timeFrame": "January, 2019 - Present",
         "title": "Web Developer",
         "description": {
-            "line1": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-            "line2": "In culpa qui officia deserunt mollit anim id est laborum"
+            "line1": "Responsible for the development and maintenance of www.tessoraclothing.com",
+            "line2": "Work with Shopify Liquid (Ruby)",
     }},
     "Ernst & Young" : {
         "tabOpen": false,
@@ -16,10 +16,10 @@ const experience = {
         "state": "Haryana",
         "country": "India",
         "timeFrame": "July, 2016 - August, 2016",
-        "title": "Research Intern",
+        "title": "Summer Research Intern",
         "description": {
-            "line1": "Colit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-            "line2": "Sunt in culpa qui officia deserunt mollit anim id est laborum"
+            "line1": "Worked under the Tax Department",
+            "line2": "Communicated with people from multiple backgrounds such as  "
     }},
     "Sabpam Exports" : {
         "tabOpen": false,

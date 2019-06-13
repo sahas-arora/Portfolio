@@ -13,6 +13,15 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="preloader.css" rel="stylesheet">
+    <div class="pre-loader-left">
+      S
+      <!-- <img src="preloader-left.png" class="preloader-left-img" /> -->
+    </div>
+    <div class="pre-loader-right">
+      A
+        <!-- <img src="preloader-right.png" class="preloader-right-img" /> -->
+    </div>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -41,5 +50,24 @@
     <script>
     new WOW().init();
     </script>
+    <script type="text/javascript">
+      // (function(){
+      //    emailjs.init("user_YkQWuPddFNs79lLTfXvMB");
+      // })();
+
+      var len = window.location.href.split('/').length
+      if(window.location.href.split('/')[len-1] !== '' || !window.matchMedia("(min-width: 567px)").matches){
+       document.getElementsByClassName('pre-loader-left')[0].style.display = 'none'
+       document.getElementsByClassName('pre-loader-right')[0].style.display = 'none'
+      }
+
+      window.onload = function (){
+           // console.log(document.getElementsByClassName('pre-loader-left')[0].classList)
+           document.getElementsByClassName('pre-loader-left')[0].classList.add('remove-left')
+           document.getElementsByClassName('pre-loader-right')[0].classList.add('remove-right')
+           document.getElementsByTagName("BODY")[0].classList.remove('preloader-config');
+       }
+
+   </script>
   </body>
 </html>

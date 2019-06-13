@@ -30,8 +30,17 @@ export default class Profile extends Component {
                     <div className="profile-part-2">
                         <button
                         className="my-button"
-                        href="sahasarora@gmail.com">
+                        >
+                        <a href="mailto:sahasarora@gmail.com">
                         Contact Me
+                        </a>
+                        </button>           
+                        <button
+                        className="my-button-2"
+                        >
+                        <a href={require("../assets/images/ResumeSahas.pdf")}>
+                        Resume
+                        </a>
                         </button>
                     </div>
 

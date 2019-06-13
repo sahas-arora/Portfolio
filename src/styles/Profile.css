@@ -83,8 +83,8 @@
     /* flex: 10 10 10%; */
     flex: 3 3 30%;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
     /* border: 1px solid red; */
     padding: 10px;
 }
@@ -98,9 +98,30 @@
     color:  rgb(255,195,65);
     font-size: 20px;
     margin-left: 10px;
-
+    outline: none;
+    transition: all ease-in-out 0.3s;
+}
+.my-button-2 {
+    border: 1px solid rgb(255, 198, 76);
+    border-radius: 4px;
+    height: 60px;
+    width: 15%;
+    background: inherit;
+    color:  rgb(200,200,200);
+    font-size: 20px;
+    margin-left: 30px;
+    outline: none;
+    transition: all ease-in-out 0.3s;
 }
 
 .my-button:hover{
     cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.045);
+}
+
+.my-button-2:hover {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.045);
 }
