@@ -7,43 +7,44 @@ let nav_links = ["About","Experience","Projects","Contact"];
 export default class Navbar extends Component {
 
     constructor(props){
-        super(props);
+        super(props);   
 
+        
         this.renderLinks = this.renderLinks.bind(this);
         this.onScroll = this.onScroll.bind(this);
     }
-
+    
     componentDidMount() {
         window.addEventListener("scroll", this.onScroll);
-      }
+    }
     
-      onScroll() {
+    onScroll() {
         if (window.pageYOffset > 5) {
-          document
+            document
             .getElementsByClassName("navbar-container")[0]
             .classList.add("nav-add");
         } else {
-          document
+            document
             .getElementsByClassName("navbar-container")[0]
             .classList.remove("nav-add");
         }
-
+        
         // var prevScrollpos = window.pageYOffset;
         // var currentScrollPos = window.pageYOffset;
         // if (prevScrollpos > currentScrollPos) {
-        //     document.getElementsByClassName("navbar-container").classList.add("nav-show");
-        // } else {
-        //     document.getElementsByClassName("navbar-container").classList.add("nav-dont");
-        // }
-        // prevScrollpos = currentScrollPos;
-        
-      }
-
- 
-
-    renderLinks() {
-        return(
-            <div id="navbar-right" className="navbar-right">
+            //     document.getElementsByClassName("navbar-container").classList.add("nav-show");
+            // } else {
+                //     document.getElementsByClassName("navbar-container").classList.add("nav-dont");
+                // }
+                // prevScrollpos = currentScrollPos;
+                
+            }
+            
+            
+            
+            renderLinks() {
+                return(
+                    <div id="navbar-right" className="navbar-right">
             {nav_links.map((link) => {
                 return(
                     <div className="nav-link" key={link}>
@@ -56,15 +57,18 @@ export default class Navbar extends Component {
             </div>
         );
     }
-
-
+    
+    
     render(){
+        let screenWidth = "Screen width: " + window.screen.width;
+        console.log(screenWidth);
+        
         return(
             <div className="navbar-container">
                 <div className="navbar">
                     <div className="navbar-left">
                         <div className="heading">
-                            SA
+                            SA 
                         </div>
                     </div>
                     {this.renderLinks()}

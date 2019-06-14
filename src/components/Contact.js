@@ -18,13 +18,14 @@ export default class Contact extends Component {
                     <div className="contact-description">
                         I'm actively looking for a new job opportunity,
                         you can always reach out to me using the link
-                        below. I'll get back to you as soon as possible!
+                        below. Or just say hi, life is too unpredicatable
+                        and short to not say hi. I'll get back to you as soon as possible!
                     </div>
                     <div className="contact-link">
-                        <button
-                            className="contact-button"
-                        >
-                            Say Hello
+                        <button className="contact-button" style={{ fontSize: "16px"}}>
+                            <a href="mailto:sahasarora@gmail.com">
+                                Click Me
+                            </a>
                         </button>
                     </div>
 

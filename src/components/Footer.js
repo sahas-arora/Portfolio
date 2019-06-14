@@ -4,6 +4,12 @@ import "../styles/Footer.css";
 
 export default class Footer extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = { color: "grey"};
+    }
+
     render() {
         return(
             <div className="footer-container">
@@ -15,7 +21,17 @@ export default class Footer extends Component {
                         Inspired by Britanny Chiang
                     </div>
                     <div className="footer-icon-container">
-                        <i className="github grey big icon"></i>
+                        <a href="https://github.com/sahas-arora/Portfolio">
+                            <i 
+                                className={`github ${this.state.color} big icon`}
+                                onMouseEnter={() => {
+                                    this.setState({ color: "blue"})
+                                }}
+                                onMouseLeave={() => {
+                                    this.setState({ color: "grey"})
+                                }}
+                            ></i>
+                        </a>
                     </div>
                 </div>
             </div>

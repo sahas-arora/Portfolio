@@ -10,6 +10,7 @@ export default class SocialMedia extends Component {
     constructor(props) {
         super(props);
 
+        this.state = { color: "grey", currentIcon: ""}
         this.renderIcons = this.renderIcons.bind(this);
     }
 
@@ -20,7 +21,12 @@ export default class SocialMedia extends Component {
             return(
             <div className="icon-container wow rollIn" key={key} >
             <a href={socialMedia[key].link}>
-                <i className={`${key} grey big icon myHover`} />
+                <i 
+                    key={key}
+                    className={`${key} ${this.state.color} big icon myHover`} 
+                    onMouseEnter={() => this.setState({ color: "yellow", currentIcon: key})}
+                    onMouseLeave={() => this.setState({ color: "grey", currentIcon: ""})}
+                />
             </a>
             </div>
             );

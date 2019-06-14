@@ -21,10 +21,14 @@ export default class Projects extends Component {
             return(
                 <div className="projects-descrip">  
                 <div className="project-image">
-                    <img 
-                        alt={`${project}`}
-                        src={require(`../assets/images/${project}.png`)} 
-                        className="pro-img"/>
+                    <a href={keys.link}>
+                        <img 
+                            alt={`${project}`}
+                            src={require(`../assets/images/${project}.png`)} 
+                            className="pro-img"
+                            />
+                    </a>    
+
                 </div>
                 <div className="project-info">
                     <div className="project-heading">
